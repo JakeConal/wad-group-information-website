@@ -617,3 +617,50 @@ body {
     transition: none !important;
   }
 }
+
+/* Rainbow blur decorative stripes (non-interactive) */
+:root{
+  --r-purple: rgba(232,121,249,0.16);
+  --r-blue:   rgba(96,165,250,0.12);
+  --r-green:  rgba(94,234,212,0.13);
+  --r-peach:  rgba(255,165,89,0.08);
+}
+
+.rainbow-wrap{
+  position: fixed;
+  inset: -10% -20% -10% -20%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+body > *{ position: relative; z-index: 1; }
+
+.stripe{
+  position: absolute;
+  top: -15%;
+  height: 130vh;
+  width: 18vw;
+  filter: blur(36px) saturate(110%);
+  transform-origin: top right;
+  mix-blend-mode: plus-lighter;
+  opacity: 0.95;
+  will-change: transform;
+  animation: stripeMove linear infinite;
+}
+
+.s1{ right: -10%; transform: rotate(8deg); background: linear-gradient(180deg, var(--r-purple), transparent 40%); animation-duration:36s; animation-delay:-2s }
+.s2{ right: 4%; transform: rotate(12deg); width:22vw; background: linear-gradient(180deg, var(--r-blue), transparent 42%); animation-duration:42s; animation-delay:-6s }
+.s3{ right: 18%; transform: rotate(6deg); width:16vw; background: linear-gradient(180deg, var(--r-green), transparent 40%); animation-duration:30s; animation-delay:-10s }
+.s4{ right: 34%; transform: rotate(10deg); width:20vw; background: linear-gradient(180deg, var(--r-peach), transparent 46%); animation-duration:48s; animation-delay:-14s }
+.s5{ right: 52%; transform: rotate(7deg); width:18vw; background: linear-gradient(180deg, var(--r-purple), var(--r-blue) 40%, transparent 56%); animation-duration:40s; animation-delay:-18s }
+.s6{ right: 70%; transform: rotate(11deg); width:24vw; background: linear-gradient(180deg, var(--r-green), var(--r-peach) 36%, transparent 60%); animation-duration:34s; animation-delay:-22s }
+
+@keyframes stripeMove{
+  from{ transform: translateX(0) rotate(8deg) }
+  50% { transform: translateX(6%) rotate(8deg) }
+  to  { transform: translateX(0) rotate(8deg) }
+}
+
+@media (prefers-reduced-motion: reduce){ .stripe{ animation:none; filter:blur(28px) } }
+
