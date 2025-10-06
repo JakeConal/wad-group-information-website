@@ -6,9 +6,15 @@
     <title>TEAM — Nguyễn Minh Hiếu, Phạm Quốc Nam Anh, Huỳnh Thái Toàn</title>
     <link rel="stylesheet" href="css/styles.css">
   </head>
+
   <body>
-    <div class="smoke-layer" aria-hidden="true"></div>
-    <header class="hero mega-hero" role="banner" aria-label="WAD GROUP cinematic hero">
+
+    <!-- Header / Hero -->
+    <header
+      class="hero mega-hero"
+      role="banner"
+      aria-label="WAD GROUP cinematic hero"
+    >
       <div class="hero-layers" aria-hidden="true">
         <div class="stars"></div>
         <div class="nebula"></div>
@@ -18,11 +24,16 @@
       <div class="hero-inner mega-content">
         <div class="eyebrow muted">WAD GROUP</div>
         <h1 class="mega-title">We Build Beautiful Web Experiences</h1>
-        <p class="mega-sub">Nguyễn Minh Hiếu · Phạm Quốc Nam Anh · Huỳnh Thái Toàn — Student projects, polished and responsive.</p>
+        <p class="mega-sub">
+          Nguyễn Minh Hiếu · Phạm Quốc Nam Anh · Huỳnh Thái Toàn — Student
+          projects, polished and responsive.
+        </p>
+
         <p class="hero-ctas">
           <a class="cta primary" href="#team">Meet the team</a>
           <a class="cta ghost" href="#about">About the project</a>
         </p>
+
         <a class="scroll-hint" href="#team" aria-label="Scroll to team">
           <span class="arrow">▾</span>
           <span class="hint-text">Scroll</span>
@@ -30,57 +41,116 @@
       </div>
     </header>
 
+    <!-- Main content -->
     <main class="content">
+
+      <!-- About -->
       <section id="about" class="card">
         <h2>About this project</h2>
-        <p>This is a static HTML &amp; CSS project created for a web apps assignment. It demonstrates a responsive layout, an image map that links faces to member pages, and accessible member information pages.</p>
-        <p>The team built the site with these goals in mind: clarity, accessibility, and a polished visual presentation suitable for class demonstration.</p>
+        <p>
+          This is a static HTML &amp; CSS project created for a web apps
+          assignment. It demonstrates a responsive layout, an image map that
+          links faces to member pages, and accessible member information pages.
+        </p>
+        <p>
+          The team built the site with these goals in mind: clarity,
+          accessibility, and a polished visual presentation suitable for class
+          demonstration.
+        </p>
       </section>
-      
 
+      <!-- Team photo and member list -->
       <section id="team" class="team">
         <h2>Team Members</h2>
+
         <div class="card group-photo">
-          <!-- group image with image-map -->
-          <img src="images/group.svg" alt="WAD GROUP photo" usemap="#groupmap" width="900" height="360">
-          <!-- Clickable overlay (CSS-only) so faces remain clickable at all sizes -->
+          <!-- Group image with image-map fallback -->
+          <img
+            src="images/group.png"
+            alt="WAD GROUP photo"
+            usemap="#groupmap"
+            width="900"
+            height="360"
+          >
+
+          <!-- CSS overlay of clickable faces (keeps targets usable at any size) -->
           <div class="map-overlay" aria-hidden="false">
-            <a class="face" href="members/23120124/index.html" aria-label="Nguyễn Minh Hiếu"></a>
-            <a class="face" href="members/23120111/index.html" aria-label="Phạm Quốc Nam Anh"></a>
-            <a class="face" href="members/23120175/index.html" aria-label="Huỳnh Thái Toàn"></a>
+            <a
+              class="face"
+              href="members/23120124/index.html"
+              aria-label="Nguyễn Minh Hiếu"
+            ></a>
+
+            <a
+              class="face"
+              href="members/23120175/index.html"
+              aria-label="Huỳnh Thái Toàn"
+            ></a>
+
+            <a
+              class="face"
+              href="members/23120111/index.html"
+              aria-label="Phạm Quốc Nam Anh"
+            ></a>
           </div>
+
           <map name="groupmap">
             <!-- coords: center-x, center-y, radius (for 900x360 image) -->
-            <area shape="circle" coords="160,160,48" href="members/23120124/index.html" alt="Nguyễn Minh Hiếu">
-            <area shape="circle" coords="420,140,48" href="members/23120111/index.html" alt="Phạm Quốc Nam Anh">
-            <area shape="circle" coords="700,150,48" href="members/23120175/index.html" alt="Huỳnh Thái Toàn">
+            <area
+              shape="circle"
+              coords="160,160,100"
+              href="members/23120124/index.html"
+              alt="Nguyễn Minh Hiếu"
+            >
+
+            <area
+              shape="circle"
+              coords="500,105,100"
+              href="members/23120175/index.html"
+              alt="Huỳnh Thái Toàn"
+            >
+
+            <area
+              shape="circle"
+              coords="790,180,100"
+              href="members/23120111/index.html"
+              alt="Phạm Quốc Nam Anh"
+            >
           </map>
         </div>
 
-  <div class="cards spaced">
+        <!-- Member cards -->
+        <div class="cards spaced">
           <article class="member">
             <div class="avatar">NH</div>
             <h3>Nguyễn Minh Hiếu</h3>
             <p class="id">Student ID: <strong>23120124</strong></p>
-            <p><a class="link" href="members/23120124/index.html">View page</a></p>
+            <p>
+              <a class="link" href="members/23120124/index.html">View page</a>
+            </p>
           </article>
 
           <article class="member">
             <div class="avatar">PA</div>
             <h3>Phạm Quốc Nam Anh</h3>
             <p class="id">Student ID: <strong>23120111</strong></p>
-            <p><a class="link" href="members/23120111/index.html">View page</a></p>
+            <p>
+              <a class="link" href="members/23120111/index.html">View page</a>
+            </p>
           </article>
 
           <article class="member">
             <div class="avatar">HT</div>
             <h3>Huỳnh Thái Toàn</h3>
             <p class="id">Student ID: <strong>23120175</strong></p>
-            <p><a class="link" href="members/23120175/index.html">View page</a></p>
+            <p>
+              <a class="link" href="members/23120175/index.html">View page</a>
+            </p>
           </article>
         </div>
       </section>
 
+      <!-- Project showcase -->
       <section class="card showcase">
         <h3>Project Showcase</h3>
         <p class="muted">A quick interactive-style summary to explore and verify the submission.</p>
@@ -111,19 +181,17 @@
               <li><span class="tick">✔</span> Tab through page to ensure focus outlines</li>
               <li><span class="tick">✔</span> Resize window — layout adapts</li>
             </ul>
-            <details>
-              <summary>Notes & tips</summary>
-              <p class="muted">Replace placeholder avatars at <code>members/&lt;id&gt;/images/avatar.svg</code> and adjust image-map coords if you swap the group photo.</p>
-            </details>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="wrap">
         <p>© WAD Group — created for class. Contact the team leads for edits.</p>
       </div>
     </footer>
+
   </body>
 </html>
