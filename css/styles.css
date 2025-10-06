@@ -643,7 +643,7 @@ body > *{ position: relative; z-index: 1; }
   width: 18vw;
   filter: blur(36px) saturate(110%);
   transform-origin: top right;
-  mix-blend-mode: plus-lighter;
+  mix-blend-mode: lighten;
   opacity: 0.95;
   will-change: transform;
   animation: stripeMove linear infinite;
