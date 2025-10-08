@@ -456,15 +456,6 @@ body {
 }
 
 .badge{
-<<<<<<< HEAD
-  background: rgba(124,92,255,0.12);
-  color: #32174d;
-  padding:8px 12px; 
-  border-radius:999px; 
-  font-weight:700; 
-  font-size:13px; 
-  transition: transform .14s ease, box-shadow .14s ease;
-=======
   background: rgba(14, 165, 233, 0.08);
   color: #0284c7;
   padding: 10px 16px;
@@ -480,7 +471,6 @@ body {
   background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
   color: #ffffff;
   border-color: transparent;
->>>>>>> f1963979b0a7d5bc921ea7e9e742b1c6dbf019a4
 }
 
 .badge:hover {
@@ -488,10 +478,6 @@ body {
   box-shadow: 0 12px 30px rgba(124,92,255,0.06);
 }
 
-<<<<<<< HEAD
-.checks {
-  padding: 12px;
-=======
 .quick-list{ list-style:none; padding:0; margin:6px 0 0 }
 .quick-list li{ margin:8px 0; display:flex; gap:10px; align-items:flex-start }
 .tick {
@@ -499,7 +485,6 @@ body {
   font-weight: 800;
   margin-right: 8px;
   font-size: 18px;
->>>>>>> f1963979b0a7d5bc921ea7e9e742b1c6dbf019a4
 }
 
 .quick-list {
